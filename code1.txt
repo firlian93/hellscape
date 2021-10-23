@@ -1,0 +1,28 @@
+select distinct department_name
+--from datasource.departments d
+--where department_name ilike '%ing'
+
+--select first_name, last_name, email, first_name || ' ' || last_name || ' ' || email as concataned_column
+----concat(first_name, ' ', last_name, ' ', email)
+--from datasource.job_employee
+
+--select count(first_name) -- hitung banyaknya row
+--from datasource.job_employee je 
+
+--select salary * salary
+--from datasource.job_employee je 
+
+--select job_id, job_title, salary
+--from datasource.job_employee je 
+--group by job_title
+
+--select first_name, job_title, salary
+--from datasource.job_employee je
+--order by job_title --, salary desc
+
+select first_name, salary
+from datasource.job_employee je 
+order by salary desc
+limit 10
+
+hackerrank
